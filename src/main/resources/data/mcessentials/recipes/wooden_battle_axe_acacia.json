@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#/#",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:acacia_planks"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "mcessentials:wooden_battle_axe",
+        "count": 1
+    },
+    "group": "wooden_battle_axes"
+}

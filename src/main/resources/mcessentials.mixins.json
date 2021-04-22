@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "feedme.minecraft.essentials.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "PhantomEntityMixin",
+    "ZombieEntityMixin",
+    "AbstractSkeletonEntityMixin",
+    "BedBlockMixin",
+    "ServerWorldMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+    "LightMapTextureMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

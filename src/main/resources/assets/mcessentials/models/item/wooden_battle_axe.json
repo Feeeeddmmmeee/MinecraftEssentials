@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+      "layer0": "mcessentials:items/wooden_battle_axe"
+    }
+}
