@@ -15,7 +15,7 @@ import feedme.minecraft.essentials.MinecraftEssentials;
 public abstract class LightMapTextureMixin {
 
     @Inject(method = "update", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/util/math/Vector3f;lerp(Lnet/minecraft/client/util/math/Vector3f;F)V", ordinal = 0), locals = LocalCapture.CAPTURE_FAILHARD)
-    private void doOurLightMap(float partialTicks, CallbackInfo ci, ClientWorld clientworld, float f, float f1, float f3, Vector3f skyVector) {
+    private void editLightMap(float partialTicks, CallbackInfo ci, ClientWorld clientworld, float f, float f1, float f3, Vector3f skyVector) {
         if (MinecraftEssentials.CurrentEvent.getName() == "BloodMoon"){
             MinecraftEssentials.CurrentEvent.modifySkyLightMapColor(skyVector);
         }

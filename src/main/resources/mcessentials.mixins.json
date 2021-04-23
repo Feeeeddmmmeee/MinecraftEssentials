@@ -13,7 +13,9 @@
   ],
   "client": [
     "LightMapTextureMixin",
-    "WorldRendererMixin"
+    "WorldRendererMixin",
+    "WorldRendererSunMixin",
+    "WorldRendererAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

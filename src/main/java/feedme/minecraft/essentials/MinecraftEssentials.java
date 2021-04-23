@@ -14,6 +14,7 @@ public class MinecraftEssentials implements ModInitializer {
 	public static final String MOD_ID = "mcessentials";
 	public static Event CurrentEvent = new DefaultEvent();
 
+
 	public static Vector3f transformToVectorColor(Color color) {
         int rgbColor = color.getRGB();
         float r = (float) (rgbColor >> 16 & 255) / 255.0F;
@@ -22,12 +23,10 @@ public class MinecraftEssentials implements ModInitializer {
         return new Vector3f(r, g, b);
     }
 
-
-	//.
-
 	@Override
 	public void onInitialize() {
 		BattleAxes.registerBattleaxes();
 		BleedingStatusEffect.registerBleeding();
+
 	}
 }

@@ -42,7 +42,7 @@ public abstract class ServerWorldMixin extends World{
         if(this.getLevelProperties().getTimeOfDay() % 24000 == 13001 && this.isNight()){
             MinecraftEssentials.CurrentEvent = new DefaultEvent();
             int eventChance = this.random.nextInt(100);
-            if(eventChance < 100){ //5
+            if(eventChance < 15){ //5
                 MinecraftEssentials.CurrentEvent = new BloodMoon();
                 ((ServerWorld) (Object) this).getPlayers().forEach(player -> {
                     player.sendMessage(new LiteralText("The Blood Moon is rising..."), false);
@@ -52,7 +52,7 @@ public abstract class ServerWorldMixin extends World{
         if(this.getLevelProperties().getTimeOfDay() % 24000 == 1 && this.isDay()){
             MinecraftEssentials.CurrentEvent = new DefaultEvent();
             int eventChance = this.random.nextInt(100);
-            if(eventChance < 0){ //5
+            if(eventChance < 8){ //5
                 MinecraftEssentials.CurrentEvent = new SolarEclipse();
                 ((ServerWorld) (Object) this).getPlayers().forEach(player -> {
                     player.sendMessage(new LiteralText("A Solar Eclipse is happening!"), false);
