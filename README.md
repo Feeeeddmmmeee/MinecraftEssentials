@@ -13,7 +13,7 @@ diamond battle axe at a smithing table).
 ### Daggers
 Daggers are a new type of tools that can be crafted using 3 of a given material, a stick and a fermented spider eye. The eye represents an ingredient essential to craft the invisibility potion. A person holding a dagger in their main hand becomes invisible until they attack an entity. The first attack deals additional 10 damage (so netherite daggers deal a total of **17** damage on the first hit, however note that all the attacks performed during the next minute will deal 7 damage and you will not be invisible anymore).
 
-![dagger_crafting](https://media.discordapp.net/attachments/469863046408306699/837032168345436200/unknown.png)
+![dagger_crafting](https://media.discordapp.net/attachments/764445839955329034/837036841571450930/unknown.png)
 
 ### Blood Moons
 Blood Moons have a 15% chance of occuring each night at 13001 time in Mnecraft ticks. They disappear after worlds time turns back to day. During Blood Moons 
