@@ -5,5 +5,15 @@
     "item.mcessentials.iron_battle_axe": "Iron Battle Axe",
     "item.mcessentials.diamond_battle_axe": "Diamond Battle Axe",
     "item.mcessentials.netherite_battle_axe": "Netherite Battle Axe",
-    "effect.mcessentials.bleeding": "Bleeding"
+    "effect.mcessentials.bleeding": "Bleeding",
+    "effect.mcessentials.dagger_cooldown": "Dagger Cooldown",
+    "enchantment.mcessentials.curse_of_insomnia": "Curse of Insomnia",
+    "enchantment.mcessentials.explosive_arrows": "Explosive Arrows",
+    "item.mcessentials.wooden_dagger": "Wooden Dagger",
+    "item.mcessentials.stone_dagger": "Stone Dagger",
+    "item.mcessentials.golden_dagger": "Golden Dagger",
+    "item.mcessentials.iron_dagger": "Iron Dagger",
+    "item.mcessentials.diamond_dagger": "Diamond Dagger",
+    "item.mcessentials.netherite_dagger": "Netherite Dagger"
+
 }

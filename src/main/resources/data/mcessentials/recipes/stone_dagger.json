@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ##",
+        " / ",
+        "#F "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "F": {
+            "item": "minecraft:fermented_spider_eye"
+        }
+    },
+    "result": {
+        "item": "mcessentials:stone_dagger",
+        "count": 1
+    }
+}

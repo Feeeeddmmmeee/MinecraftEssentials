@@ -2,10 +2,14 @@ package feedme.minecraft.essentials;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.client.util.math.Vector3f;
+import feedme.minecraft.essentials.Commands.Commands;
+import feedme.minecraft.essentials.Enchantments.EnchantmentRegistry;
 import feedme.minecraft.essentials.Events.DefaultEvent;
 import feedme.minecraft.essentials.Events.Event;
 import feedme.minecraft.essentials.Items.BattleAxes;
+import feedme.minecraft.essentials.Items.Daggers;
 import feedme.minecraft.essentials.StatusEffects.BleedingStatusEffect;
+import feedme.minecraft.essentials.StatusEffects.DaggerCooldown;
 
 import java.awt.*;
 
@@ -25,8 +29,13 @@ public class MinecraftEssentials implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		BattleAxes.registerBattleaxes();
 		BleedingStatusEffect.registerBleeding();
+		Commands.registerCommands();
+		EnchantmentRegistry.registerEnchantments();
+		DaggerCooldown.registerDaggerCooldown();
+		Daggers.registerDaggers();
 
 	}
 }
