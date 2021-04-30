@@ -27,10 +27,10 @@ public abstract class PlayerEntityMixin extends LivingEntity{
     }
 
     @Inject(method = "damage", at = @At("HEAD"))
-    private void applyBleeding(DamageSource source, float amount, CallbackInfoReturnable cir){
+    private void applyBleeding(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir){
         if(!source.getMagic()){
             if(MinecraftEssentials.CurrentEvent.getName() == "BloodMoon"){
-                this.applyStatusEffect(new StatusEffectInstance(BleedingStatusEffect.BLEEDING, 60, 0));
+                this.applyStatusEffect(new StatusEffectInstance(BleedingStatusEffect.BLEEDING, 60, 0, false, false, true));
             }
         }
     }
@@ -41,7 +41,7 @@ public abstract class PlayerEntityMixin extends LivingEntity{
             if(this.getMainHandStack().isItemEqual(Daggers.NETHERITE_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.DIAMOND_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.IRON_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.GOLDEN_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.STONE_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.WOODEN_DAGGER.getDefaultStack())){
                 if(!this.hasStatusEffect(DaggerCooldown.DAGGER_COOLDOWN)) {
                     this.clearStatusEffects();
-                    this.applyStatusEffect(new StatusEffectInstance(DaggerCooldown.DAGGER_COOLDOWN, 1200, 0));
+                    this.applyStatusEffect(new StatusEffectInstance(DaggerCooldown.DAGGER_COOLDOWN, 1200, 0, false, false, true));
                     target.damage(DamageSource.player((PlayerEntity) (Entity) this), 10.0f);
                 }
             }
@@ -53,7 +53,7 @@ public abstract class PlayerEntityMixin extends LivingEntity{
     
         if(this.getMainHandStack().isItemEqual(Daggers.NETHERITE_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.DIAMOND_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.IRON_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.GOLDEN_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.STONE_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.WOODEN_DAGGER.getDefaultStack())){
             if(!this.hasStatusEffect(DaggerCooldown.DAGGER_COOLDOWN)){
-                this.applyStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 25, 0));
+                this.applyStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 25, 0, false, false, false));
             }
         }
 
