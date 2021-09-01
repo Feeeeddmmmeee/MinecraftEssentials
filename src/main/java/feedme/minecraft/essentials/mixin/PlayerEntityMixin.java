@@ -53,7 +53,7 @@ public abstract class PlayerEntityMixin extends LivingEntity{
     
         if(this.getMainHandStack().isItemEqual(Daggers.NETHERITE_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.DIAMOND_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.IRON_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.GOLDEN_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.STONE_DAGGER.getDefaultStack()) || this.getMainHandStack().isItemEqual(Daggers.WOODEN_DAGGER.getDefaultStack())){
             if(!this.hasStatusEffect(DaggerCooldown.DAGGER_COOLDOWN)){
-                this.applyStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 25, 0, false, false, false));
+                this.applyStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 2, 0, false, false, false));
             }
         }
 

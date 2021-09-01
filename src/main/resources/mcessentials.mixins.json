@@ -4,6 +4,7 @@
   "package": "feedme.minecraft.essentials.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "HostileEntityMixin",
     "PhantomEntityMixin",
     "ZombieEntityMixin",
     "AbstractSkeletonEntityMixin",
