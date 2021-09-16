@@ -45,6 +45,6 @@ If you want to just play with the events you can use some new commands. All comm
 
 ## External links
 
-### Downloads
+### Downloads:
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mcessentials)
 - [Github](https://github.com/Feeeeddmmmeee/MinecraftEssentials/releases)
